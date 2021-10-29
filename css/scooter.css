@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --var-color1:rgb(171, 58, 199);
+    --var-color2:rgb(236, 172, 172);
+    --var-color3:white;
+    --var-color4:dimgray;
+}
+body {
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    width:90%;
+    height:60%;
+    min-height: 600px;
+    margin:auto;
+    background-color: var(--var-color3);
+    background-image: url(../img/illustration.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 90%;
+}
+
+section>nav {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section>nav>ul {
+    display: flex;
+}
+
+section>nav>.bout {
+    display: flex;
+}
+
+section>nav>h1 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--var-color1);
+    font-size: 1.5rem;
+}
+section>nav>ul>li {
+    list-style-type: none;
+    margin:0 10px;
+    color: var(--var-color2);
+}
+section>nav>ul>li:hover {
+    cursor: pointer;
+    color: var(--var-color1);
+}
+
+section>nav>.bout>* {
+    color:var(--var-color3);
+    font-weight: bold;
+    border: solid var(--var-color4) 1px;
+    border-radius: 5px;
+    background-color: var(--var-color4);
+    padding: 10px 25px;
+    margin:0 10px;
+}
+section>nav>.bout>.boutonG {
+    background-color: var(--var-color3);
+    color: var(--var-color4);
+}
+section>nav>.bout>*:hover {
+    cursor: pointer;
+    background-color: var(--var-color1);
+    color: var(--var-color4);
+
+}
+
+section>article {
+    width:40%;
+    margin: 50px;
+}
+section>article>h2 {
+    font-weight: bold;
+    margin:50px 0;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+section>article>p {
+    margin:50px 0;
+    color:var(--var-color2);
+}
+
+section>article>.bout {
+    width:80%;
+    margin:50px auto;
+    color:var(--var-color2);
+    border:solid var(--var-color1) 5px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--var-color1);
+    color: var(--var-color3);
+    text-align: center;
+}
+section>article>.bout:hover {
+    background-color: var(--var-color3);
+    color: var(--var-color1); 
+    cursor: pointer;
+}
